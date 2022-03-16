@@ -1,0 +1,26 @@
+@import "../../utilities/variables.scss";
+
+.loading-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  div {
+    display: flex;
+    flex-direction: column;
+    b {
+      @extend %headings;
+      text-align: center;
+      text-transform: capitalize;
+    }
+    .loading {
+      color: $primary-color;
+    }
+    .error {
+      color: #ef4444;
+    }
+    .no-data {
+      color: $secondary-color;
+    }
+  }
+}

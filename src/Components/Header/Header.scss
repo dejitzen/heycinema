@@ -1,0 +1,12 @@
+@import "../../utilities/variables.scss";
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+  margin: 0px auto;
+  box-shadow: $shadow-style;
+  padding: 10px 20px;
+  border-radius: 0 0 $radius-amount $radius-amount;
+}

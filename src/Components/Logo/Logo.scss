@@ -1,0 +1,19 @@
+@import "../../utilities/variables.scss";
+
+.logo-wrapper {
+  width: 50px;
+  aspect-ratio: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  .primary {
+    @extend %headings;
+    color: $primary-color;
+  }
+  .secondary {
+    @extend %headings;
+    margin-top: -20px;
+    color: $secondary-color;
+    font-size: 18px;
+  }
+}

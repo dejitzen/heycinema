@@ -1,0 +1,16 @@
+@import "../../utilities/variables.scss";
+
+.home-wrapper {
+  @extend %screen-layout;
+  .home-upper {
+    display: flex;
+  }
+  .movie-list-wrapper {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

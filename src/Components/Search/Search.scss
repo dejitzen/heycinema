@@ -1,0 +1,29 @@
+@import "../../utilities/variables.scss";
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  box-shadow: $shadow-style;
+  height: 35px;
+  padding-left: 10px;
+  border-radius: $radius-amount;
+  .search-input {
+    input {
+      @extend %body;
+      border: none;
+      outline: none;
+      font-style: italic;
+      color: $tertiary-color;
+    }
+  }
+  .search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    aspect-ratio: 1;
+    cursor: pointer;
+    color: $primary-color;
+  }
+}

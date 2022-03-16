@@ -1,0 +1,17 @@
+$primary-color: #7faae4;
+$secondary-color: #834db7;
+$tertiary-color: #34283f;
+$shadow-style: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+$radius-amount: 8px;
+
+%headings {
+  font-size: 18px;
+  font-weight: bold;
+}
+%body {
+  font-size: 16px;
+}
+%screen-layout {
+  width: 85%;
+  margin: 20px auto;
+}

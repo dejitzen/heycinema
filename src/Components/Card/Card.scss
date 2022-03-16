@@ -1,0 +1,59 @@
+@import "../../utilities/variables.scss";
+
+.card-wrapper {
+  height: 125px;
+  border-radius: $radius-amount;
+  box-shadow: $shadow-style;
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 30px;
+  .card-wrapper-img {
+    width: 45%;
+    height: 100%;
+    overflow: hidden;
+    transform: skewX(-10deg);
+    margin-left: -5%;
+    img {
+      width: 110%;
+      height: 100%;
+      object-fit: cover;
+      transform: skewX(10deg);
+    }
+  }
+  .card-wrapper-content {
+    width: 55%;
+    padding: 12px 5px;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .heading {
+      @extend %headings;
+      color: $primary-color;
+    }
+    .subtitle {
+      @extend %body;
+      color: $tertiary-color;
+    }
+    .callout {
+      @extend %body;
+      color: $secondary-color;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card-wrapper {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .card-wrapper {
+    width: 45%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .card-wrapper {
+    width: 30%;
+  }
+}
